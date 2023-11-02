@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>C:/Users/Dario/Desktop/Proiect PAOO/JOCUL</OriginalElement>
+  <nodes>
+    <node x="105.5" y="369.0">entity.SKELETON</node>
+    <node x="506.3175813008129" y="391.5">object.obj_chest</node>
+    <node x="374.3175813008129" y="391.5">object.obj_torch</node>
+    <node x="-158.91463414634143" y="720.0">main.AssetSetter</node>
+    <node x="42.08536585365857" y="720.0">main.CollisionChecker</node>
+    <node x="-176.24542682926835" y="1118.0">main.Main</node>
+    <node x="588.3175813008129" y="709.0">tile.TileManager</node>
+    <node x="642.3175813008129" y="391.5">tile.Tile</node>
+    <node x="-770.4146341463414" y="203.0">main.KeyHandler</node>
+    <node x="-210.24542682926835" y="903.0">main.GamePanel</node>
+    <node x="-322.85162601626007" y="-12.0">entity.Entity</node>
+    <node x="378.89837398373993" y="10.0">object.SuperObject</node>
+    <node x="-396.9146341463414" y="698.0">main.UI</node>
+    <node x="-638.9146341463414" y="698.0">entity.Player</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="main.GamePanel" target="main.KeyHandler" relationship="CREATE">
+      <point x="-110.5" y="60.0" />
+      <point x="-817.9146341463414" y="1045.5" />
+      <point x="-817.9146341463414" y="418.5" />
+      <point x="-113.5" y="-0.0" />
+    </edge>
+    <edge source="main.GamePanel" target="main.CollisionChecker" relationship="CREATE">
+      <point x="110.5" y="-30.0" />
+      <point x="152.58536585365857" y="955.5" />
+      <point x="-0.0" y="49.5" />
+    </edge>
+    <edge source="main.AssetSetter" target="object.obj_torch" relationship="CREATE">
+      <point x="-15.000365853658579" y="-49.5" />
+      <point x="-83.415" y="506.5" />
+      <point x="430.3175813008129" y="506.5" />
+      <point x="-0.0" y="27.0" />
+    </edge>
+    <edge source="entity.SKELETON" target="entity.Entity" relationship="GENERALIZATION">
+      <point x="0.0" y="-49.5" />
+      <point x="198.0" y="182.0" />
+      <point x="-102.68241869918711" y="182.0" />
+      <point x="-102.68241869918711" y="162.0" />
+      <point x="-157.85162601626007" y="162.0" />
+      <point x="0.0" y="71.5" />
+    </edge>
+    <edge source="main.AssetSetter" target="object.obj_chest" relationship="CREATE">
+      <point x="14.999634146341421" y="-49.5" />
+      <point x="-53.415000000000006" y="551.5" />
+      <point x="564.3175813008129" y="551.5" />
+      <point x="-0.0" y="27.0" />
+    </edge>
+    <edge source="main.GamePanel" target="main.UI" relationship="TO_ONE">
+      <point x="-103.0" y="-82.5" />
+      <point x="85.16920731707307" y="71.5" />
+    </edge>
+    <edge source="main.UI" target="main.GamePanel" relationship="TO_ONE">
+      <point x="-3.6585365859309604E-4" y="-71.5" />
+      <point x="-287.915" y="672.0" />
+      <point x="794.818" y="672.0" />
+      <point x="794.818" y="872.0" />
+      <point x="-99.745" y="872.0" />
+      <point x="4.2682926834913815E-4" y="-82.5" />
+    </edge>
+    <edge source="entity.Player" target="main.GamePanel" relationship="TO_ONE">
+      <point x="18.414634146341427" y="-71.5" />
+      <point x="-509.5" y="672.0" />
+      <point x="794.818" y="672.0" />
+      <point x="794.818" y="872.0" />
+      <point x="-99.745" y="872.0" />
+      <point x="4.2682926834913815E-4" y="-82.5" />
+    </edge>
+    <edge source="main.GamePanel" target="entity.Player" relationship="TO_ONE">
+      <point x="-110.5" y="-0.0" />
+      <point x="-512.915" y="985.5" />
+      <point x="14.999634146341464" y="71.5" />
+    </edge>
+    <edge source="main.GamePanel" target="main.AssetSetter" relationship="TO_ONE">
+      <point x="31.330792682926926" y="-82.5" />
+      <point x="-0.0" y="49.5" />
+    </edge>
+    <edge source="main.AssetSetter" target="main.GamePanel" relationship="TO_ONE">
+      <point x="-3.658536585788852E-4" y="-49.5" />
+      <point x="-68.415" y="672.0" />
+      <point x="794.818" y="672.0" />
+      <point x="794.818" y="872.0" />
+      <point x="-99.745" y="872.0" />
+      <point x="4.2682926834913815E-4" y="-82.5" />
+    </edge>
+    <edge source="main.GamePanel" target="tile.TileManager" relationship="CREATE">
+      <point x="110.5" y="-0.0" />
+      <point x="682.8175813008129" y="985.5" />
+      <point x="-0.0" y="60.5" />
+    </edge>
+    <edge source="main.GamePanel" target="entity.Entity" relationship="TO_MANY">
+      <point x="110.5" y="45.0" />
+      <point x="839.818" y="1030.5" />
+      <point x="839.818" y="-7.5" />
+      <point x="165.0" y="-67.0" />
+    </edge>
+    <edge source="object.obj_chest" target="object.SuperObject" relationship="GENERALIZATION">
+      <point x="0.0" y="-27.0" />
+      <point x="564.3175813008129" y="182.0" />
+      <point x="515.5" y="182.0" />
+      <point x="515.5" y="152.0" />
+      <point x="526.3983739837399" y="152.0" />
+      <point x="0.0" y="49.5" />
+    </edge>
+    <edge source="main.GamePanel" target="object.SuperObject" relationship="TO_MANY">
+      <point x="110.5" y="30.0" />
+      <point x="824.818" y="1015.5" />
+      <point x="824.818" y="44.5" />
+      <point x="147.5" y="-15.0" />
+    </edge>
+    <edge source="tile.TileManager" target="tile.Tile" relationship="TO_MANY">
+      <point x="15.000418699187094" y="-60.5" />
+      <point x="15.000418699187094" y="27.0" />
+    </edge>
+    <edge source="main.GamePanel" target="entity.Player" relationship="CREATE">
+      <point x="-110.5" y="15.0" />
+      <point x="-542.915" y="1000.5" />
+      <point x="-15.000365853658536" y="71.5" />
+    </edge>
+    <edge source="main.CollisionChecker" target="main.GamePanel" relationship="TO_ONE">
+      <point x="-3.6585365856467433E-4" y="-49.5" />
+      <point x="152.585" y="672.0" />
+      <point x="794.818" y="672.0" />
+      <point x="794.818" y="872.0" />
+      <point x="-99.745" y="872.0" />
+      <point x="4.2682926834913815E-4" y="-82.5" />
+    </edge>
+    <edge source="main.GamePanel" target="main.KeyHandler" relationship="TO_ONE">
+      <point x="-14.99957317073165" y="-82.5" />
+      <point x="-114.745" y="856.0" />
+      <point x="-671.915" y="856.0" />
+      <point x="-15.000365853658536" y="215.5" />
+    </edge>
+    <edge source="main.KeyHandler" target="main.GamePanel" relationship="TO_ONE">
+      <point x="-3.658536585362526E-4" y="215.5" />
+      <point x="-656.915" y="872.0" />
+      <point x="-99.745" y="872.0" />
+      <point x="4.2682926834913815E-4" y="-82.5" />
+    </edge>
+    <edge source="main.GamePanel" target="main.CollisionChecker" relationship="TO_ONE">
+      <point x="110.5" y="-45.0" />
+      <point x="137.58536585365857" y="940.5" />
+      <point x="-15.0" y="49.5" />
+    </edge>
+    <edge source="entity.Player" target="main.KeyHandler" relationship="TO_ONE">
+      <point x="-3.658536585362526E-4" y="71.5" />
+      <point x="-527.915" y="856.0" />
+      <point x="-671.915" y="856.0" />
+      <point x="-15.000365853658536" y="215.5" />
+    </edge>
+    <edge source="main.GamePanel" target="main.AssetSetter" relationship="CREATE">
+      <point x="16.330792682926926" y="-82.5" />
+      <point x="-15.0" y="49.5" />
+    </edge>
+    <edge source="main.GamePanel" target="main.UI" relationship="CREATE">
+      <point x="-86.66920731707307" y="-82.5" />
+      <point x="101.5" y="71.5" />
+    </edge>
+    <edge source="main.AssetSetter" target="entity.SKELETON" relationship="CREATE">
+      <point x="-49.26778455284568" y="-49.5" />
+      <point x="-117.68241869918711" y="418.5" />
+      <point x="-92.5" y="-0.0" />
+    </edge>
+    <edge source="entity.Entity" target="main.GamePanel" relationship="TO_ONE">
+      <point x="164.99962601626007" y="-0.0" />
+      <point x="308.0" y="59.5" />
+      <point x="308.0" y="672.0" />
+      <point x="794.818" y="672.0" />
+      <point x="794.818" y="872.0" />
+      <point x="-99.745" y="872.0" />
+      <point x="4.2682926834913815E-4" y="-82.5" />
+    </edge>
+    <edge source="tile.TileManager" target="tile.Tile" relationship="CREATE">
+      <point x="-14.999581300812906" y="-60.5" />
+      <point x="-14.999581300812906" y="27.0" />
+    </edge>
+    <edge source="main.Main" target="main.GamePanel" relationship="CREATE">
+      <point x="-0.0" y="-61.5" />
+      <point x="-0.0" y="82.5" />
+    </edge>
+    <edge source="tile.TileManager" target="main.GamePanel" relationship="TO_ONE">
+      <point x="4.1869918709380727E-4" y="-60.5" />
+      <point x="682.818" y="672.0" />
+      <point x="794.818" y="672.0" />
+      <point x="794.818" y="872.0" />
+      <point x="-99.745" y="872.0" />
+      <point x="4.2682926834913815E-4" y="-82.5" />
+    </edge>
+    <edge source="main.GamePanel" target="tile.TileManager" relationship="TO_ONE">
+      <point x="110.5" y="-15.0" />
+      <point x="667.8175813008129" y="970.5" />
+      <point x="-15.0" y="60.5" />
+    </edge>
+    <edge source="object.obj_torch" target="object.SuperObject" relationship="GENERALIZATION">
+      <point x="0.0" y="-27.0" />
+      <point x="430.3175813008129" y="182.0" />
+      <point x="515.5" y="182.0" />
+      <point x="515.5" y="152.0" />
+      <point x="526.3983739837399" y="152.0" />
+      <point x="0.0" y="49.5" />
+    </edge>
+    <edge source="entity.Player" target="entity.Entity" relationship="GENERALIZATION">
+      <point x="-55.5" y="-71.5" />
+      <point x="-583.4146341463414" y="676.0" />
+      <point x="-532.9146341463414" y="676.0" />
+      <point x="-532.9146341463414" y="182.0" />
+      <point x="-102.68241869918711" y="182.0" />
+      <point x="-102.68241869918711" y="162.0" />
+      <point x="-157.85162601626007" y="162.0" />
+      <point x="0.0" y="71.5" />
+    </edge>
+    <edge source="main.GamePanel" target="entity.Entity" relationship="CREATE">
+      <point x="-110.5" y="75.0" />
+      <point x="-832.9146341463414" y="1060.5" />
+      <point x="-832.9146341463414" y="59.5" />
+      <point x="-165.0" y="-0.0" />
+    </edge>
+    <edge source="main.GamePanel" target="object.SuperObject" relationship="CREATE">
+      <point x="110.5" y="15.0" />
+      <point x="809.818" y="1000.5" />
+      <point x="809.818" y="59.5" />
+      <point x="147.5" y="-0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.30479183032207385" showDependencies="true" x="45.0" y="659.9046391752577" />
+  <SelectedNodes>
+    <node>main.GamePanel</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
